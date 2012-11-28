@@ -5,16 +5,15 @@
 
 using std::string;
 
-template <typename X, typename Y> 
+template <typename Y> 
 class Entry {
   private:
-    X key;
+    string key;
     Y value;
 
   public:
-    Entry(X k, Y v);
-    X getKey();
+    Entry(string k, Y v);
+    string getKey();
     Y getValue();
-    
 };
 #endif
